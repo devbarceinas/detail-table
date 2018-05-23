@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="detail-table">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `detail-table`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class DetailTable extends Polymer.Element {
+      static get is() { return 'detail-table'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'detail-table'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(DetailTable.is, DetailTable);
+  </script>
+</dom-module>
