@@ -1,0 +1,26 @@
+{
+    "player": [
+        { 
+            "id": 1, 
+            "alias": "sod",
+            "amount": 2500, 
+            "status": "ready", 
+            "properties": "Hotel"
+        },
+        { 
+            "id": 2, 
+            "alias": "erf",
+            "amount": 3500, 
+            "status": "ready", 
+            "properties": "Casa"
+        },
+        { 
+            "id": 3, 
+            "alias": "per",
+            "amount": 2344, 
+            "status": "ready", 
+            "properties": "Departamento"
+        }
+    ]
+}
+  
