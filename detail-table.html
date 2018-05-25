@@ -8,8 +8,9 @@
       }
 
       :root {
-        --header-blue: #008081;
-        --oddRow-blue: #607D8B;
+        --header-gray: #008081;
+        --oddRow-gray: #607D8B;
+        --evenRow-gray:#607D96;
         --academy-white: #fff;
         --text-color: #ddd;
       }
@@ -29,7 +30,7 @@
       }
 
       th {
-        background-color: var(--header-blue);
+        background-color: var(--header-gray);
         border-width: 1px;
         border-style: solid;
         color: var(--text-color);
@@ -37,11 +38,11 @@
       }
 
       tr:nth-child(even) td{
-        background-color: var(--academy-white);
+        background-color: var(--evenRow-gray);
       }
 
       td {
-        background-color: var(--oddRow-blue);;
+        background-color: var(--oddRow-gray);;
         border-color: var(--academy-white);
         border-style: solid;
         border-width: 1px;
