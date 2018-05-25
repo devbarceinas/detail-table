@@ -8,9 +8,10 @@
       }
 
       :root {
-        --header-blue: #006EC1;
-        --oddRow-blue: #B5E5F9;
+        --header-blue: #008081;
+        --oddRow-blue: #607D8B;
         --academy-white: #fff;
+        --text-color: #ddd;
       }
 
       .container{
@@ -20,7 +21,7 @@
 
       .table-transactions {
         font-family: verdana, arial, sans-serif;
-        font-size: 11px;
+        font-size: 13px;
         border-width: 1px;
         border-collapse: collapse;
         text-align: center;
@@ -31,7 +32,7 @@
         background-color: var(--header-blue);
         border-width: 1px;
         border-style: solid;
-        color: var(--academy-white);
+        color: var(--text-color);
         padding: 8px;
       }
 
@@ -44,6 +45,7 @@
         border-color: var(--academy-white);
         border-style: solid;
         border-width: 1px;
+        color: var(--text-color);
         padding: 8px;
       }
 
@@ -70,7 +72,7 @@
           <th>To User</th>
           <th>Amount</th>
           <th>Property</th>
-          <th>Date</th>
+          <th>Date Time</th>
         </tr>
       </thead>
       <tbody>
@@ -179,6 +181,7 @@
         }
 
         format_currency(amount){
+
           if(isNaN(amount) || amount===0){
             return '-'
           }
